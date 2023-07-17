@@ -1,0 +1,30 @@
+#footer-placeholder {
+    margin-top: 7%;
+    padding: 40px 40px;
+    background-color: rgb(61, 52, 54);
+}
+
+.link-style {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.contact-me {
+    display: grid;
+    max-width: 400px;
+    margin: auto;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.link-style:hover {
+    color: red;
+}
+
+.footer-layout {
+    text-align: center;
+    margin: auto;
+    max-width: 50%;
+    align-items: center;
+}

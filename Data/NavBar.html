@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<header>
+  <link rel="stylesheet" href="../style/Navbar.css">
+  <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</header>
+
+<body>
+  <nav class="topnav">
+    <a class="side-bar-button" onclick="openNav()"><img class="img2" src="../Media/pngegg.png" alt=""></a>
+    <div class="name">HAMID RAZA</div>
+    <div class="link-all">
+      <a class="link" href="main.html">Portfolio</a>
+      <div class="dropdown">
+        <button class="dropbtn link">
+          Sections
+          <i class="bi-caret-down-fill" ></i>
+        </button>
+        <div class="dropdown-content">
+          <a onclick="test('.work-experience', '.work-experience-data');" href="#work-experience">Work
+            Experience</a>
+          <a onclick="test('.education', '.education-data');" href="#education">Education</a>
+          <a onclick="test('.extra-curricular', '.extra-curricular-data');" href="#extra-curricular">ECA</a>
+          <a href="#skills">Skills</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="linkedin-img">
+      <a href="https://www.linkedin.com/in/syed-muhammad-hamid-raza-727b0b237/"><img class="img" src="../Media/linkedin4.png"
+          alt=""></a>
+    </div>
+
+  </nav>
+</body>
+
+<script type="module" src="scripts/Navbar.js">
+
+
+</script>
+
+</html>

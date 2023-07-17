@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg">
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("Data/NavBar.html");
+            $(".work-experience-data").load("Data/workExperience.html");
+            $(".education-data").load("Data/Education.html");
+            $(".extra-curricular-data").load("Data/ECA.html");
+            $(".skill-layout").load("Data/skills.html");
+        });
+    </script>
+    <div id="mySidenav" class="sidenav">
+        <img class="profile-img" src="Media/testImage.avif" alt="">
+        <h2>About me</h2>
+        <div class="profile-information">
+            Passionate towards software development, development of applications that improve areas such as education
+            and game development
+        </div>
+        <br><br><br>
+        <h2>Projects</h2><br>
+        <div class="projects">
+            <a href="https://hamidraza123.itch.io/etis-adventure">Eti's Adventure</a>
+            <br>
+            <a href="DailyTaskApp/TaskManager.html">Daily Task App</a>
+        </div>
+
+    </div>
+    <div id="main">
+        <nav id="nav-placeholder">
+        </nav>
+        <div class="page-layout">
+            <div></div>
+            <div>
+                <div class="about-me">
+                    <div class="about-me-header">Summary</div>
+                    Student graduating in 2023 with a computer science degree, offering software
+                    engineering and computer science skills. Passionate about programming and
+                    development, not only enthusiastic and hard working towards any tasks undertaken but
+                    also focus on learning from past experiences. Hardworking job seeker with strong
+                    organizational skills eager to secure entry-level software engineering position. Ready to
+                    help team achieve company goals.
+                </div>
+
+                <div id="work-experience" class="ButtonLooking"
+                    onclick="test('.work-experience', '.work-experience-data');">Work Experience</div>
+                <div class="sector work-experience">
+                    <div class="work-experience-data show-data">Hello World</div>
+                </div>
+
+                <div id="education" class="ButtonLooking" onclick="test('.education', '.education-data');">Education
+                </div>
+                <div class="sector education">
+                    <div class="education-data show-data">Hello World</div>
+                </div>
+
+                <div id="extra-curricular" class="ButtonLooking"
+                    onclick="test('.extra-curricular', '.extra-curricular-data');">Extra-Curricular Activities</div>
+                <div class="sector extra-curricular">
+                    <div class="extra-curricular-data show-data"></div>
+                </div>
+
+                <div id="skills" class="header-font">Skills</div>
+
+                <div class="skill-layout">
+                   
+                </div>
+                Next Section
+
+                <div class="extra-information-layout">
+                    <div class="extra-information">
+                        <div class="header">Java</div>
+                        <div class="information">Great understanding of java in procedural and OOPs
+                        </div>
+                    </div>
+                    <div class="extra-information">
+                        <div class="header">Java</div>
+                        <div class="information">Great understanding of java in procedural and OOPs
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="maincontainer">
+                    <div class="back">
+                        <h2>Copywriting</h2>
+                        <p>Introduction to Copywriting’ workshop focuses on the theory and processes of professional copywriting as applied to persuasion, reasoning, and rhetoric. This workshop is best-suited to learning how to write and think about consumer-driven functions.</p>
+                    </div>
+                    <div class="front">
+                        <div class="image">
+                        <img src="https://i.postimg.cc/nhG8H3X6/copywriting.jpg">
+                        <h2>Copywriting</h2>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $("#footer-placeholder").load("Data/Footer.html");
+            });
+        </script>
+        <div id="footer-placeholder"></div>
+    </div>
+</body>
+
+<script>
+    function test(IdName, data) {
+        document.querySelectorAll(IdName)
+            .forEach((dropdown) => {
+                if (!dropdown.classList.contains('startDisplay')) {
+                    dropdown.classList.add('startDisplay')
+                    dropdown.classList.remove('stopDisplay')
+                    document.querySelector(data).classList.remove('show-data')
+                } else {
+                    dropdown.classList.add('stopDisplay')
+                    dropdown.classList.remove('startDisplay')
+                    document.querySelector(data).classList.add('show-data')
+                }
+            })
+
+    }
+
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        let mySideBar = document.getElementById("mySidenav");
+        if (!mySideBar.classList.contains("showSideBar")) {
+            mySideBar.classList.add("showSideBar")
+            document.getElementById("mySidenav").style.width = "200px";
+            document.getElementById("main").style.marginLeft = "200px";
+        } else {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            mySideBar.classList.remove("showSideBar")
+        }
+
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+
+    } 
+</script>
+
+</html>

@@ -1,0 +1,107 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.shop-layout {
+    display: grid;
+    grid-template-columns: auto 400px;
+}
+
+.ShopPage {
+    background-color: rgb(61, 52, 54);
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    font-family: Arial;
+    margin: auto;
+    margin-top: 5%; 
+    max-width: fit-content;
+    padding: 5px 25px;
+    border: 1px solid #fff;
+}
+
+.ShopHeading  { 
+    text-align: center;
+}
+
+.add-to-shop {
+    display: grid;
+    grid-template-columns: 250px auto auto;
+}
+
+.shop-grid-show, .shop-grid  {
+    display: grid;
+    grid-template-columns: 300px 100px 100px 100px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+/* .item {
+    border: 1px solid #fff;
+    padding: 12px;
+} */
+
+.topnav a#shop {
+    background-color: crimson;
+    color: white;
+}
+
+.delete-shop-button,
+.buy-button,
+.shop-add {
+    font-family:'Courier New', Courier, monospace;
+    max-width: 100px;
+    padding: 12px 10px;
+    border-radius: 5%;
+    border-width: 3px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    /* margin: auto; */
+}
+
+.buy-button {
+    border-color: green;
+    background-color: green;
+}
+
+.delete-shop-button {
+    border-color: red;
+    background-color: red;   
+}
+
+.shop-add {
+    border-color: rgb(8, 0, 254);
+    background-color: rgb(35, 66, 203);
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+button.buy-button:hover {
+    color: beige;
+    box-shadow: 0px 10px 18px rgb(36, 231, 111);
+    transform: translateY(-0.25em);
+    border-color: #07db43;
+}
+
+button.delete-shop-button:hover {
+    color: beige;
+    box-shadow: 0px 10px 18px rgb(251, 61, 61);
+    transform: translateY(-0.25em);
+    border-color: #e90a0a;
+}
+
+button.shop-add:hover {
+    color: beige;
+    box-shadow: 0px 10px 18px rgb(3, 7, 246);
+    transform: translateY(-0.25em);
+    border-color: #4e82dc;
+}
+

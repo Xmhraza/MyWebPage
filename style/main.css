@@ -1,0 +1,292 @@
+html {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, rgb(23, 23, 22) 0%, rgb(23, 23, 22) 25%, rgb(23, 23, 22) 51%, #4a4849 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    
+}
+
+.about-me {
+    margin: auto;
+    padding: 20px 20px;
+    background-color: rgb(30, 29, 30);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 25px;
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+.about-me-header {
+    font-size: larger;
+    margin-bottom: 2%;
+}
+
+/* Education, ECA, Work-Experience */
+
+.sector {
+    height: 0;
+    overflow: auto;
+    background: rgb(30, 29, 30);
+    width: 95%;
+    margin: auto;
+    border-radius: 25px;
+    padding: 10px 12px;
+    overscroll-behavior: contain;
+}
+
+.show-data {
+    display: none;
+}
+
+.startDisplay {
+    animation: slide 0.5s ease forwards;
+}
+
+.stopDisplay {
+    animation: slide-back 0.5s normal backwards;
+}
+
+.ButtonLooking {
+    background-color: rgb(79, 58, 80);
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: xx-large;
+    border-bottom: white solid 1px;
+    border-left: white solid 1px;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 300px;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        height: 300px;
+    }
+
+    to {
+        height: 0;
+    }
+}
+  
+/* Skill layout and scroll */
+.header-font {
+    background-color: rgb(79, 58, 80);
+    padding: 10px 12px;
+    font-size: xx-large;
+    border-bottom: white solid 1px;
+    margin-top: 10%;
+    border-left: white solid 1px;
+    border-radius: 10px;
+}
+
+.skill-layout {
+  margin-top: 2%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 350px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-gutter: stable;
+  overflow-x: scroll;
+}
+
+
+.skill-layout::-webkit-scrollbar {
+    height: 10px;
+}
+
+.sector::-webkit-scrollbar {
+   width: 10px;
+}
+
+.sector::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+.skill-layout::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+ /* The side navigation menu */
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(30, 29, 30); 
+    overflow-x: hidden; 
+    padding-top: 40px;
+    transition: 0.5s; 
+  }
+
+  .sidenav .profile-information, h2, a{
+    text-align: center;
+  }
+
+  .profile-img {
+    max-width: 160px;
+    border-radius: 100%;
+    box-shadow: 1px 10px 5px rgb(39, 40, 40);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+ 
+  .sidenav a {
+    padding: 8px 8px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    background: rgba(223, 221, 223, 0.3);
+    border-radius: 25px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+
+
+  .extra-information {
+    display: grid;
+    grid-template-rows: 100px 230px;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(30, 29, 30);
+    border-radius: 25px;
+    margin-top: 10%;
+    transition: 0.3s;
+    margin: auto;
+}
+
+
+div .extra-information .header {
+    font-size: larger;
+    background-color: rgb(79, 58, 80);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    line-height: 100px;
+    text-align: center;
+}
+
+
+div .extra-information .information {
+    text-align: center;
+    margin: auto;
+}
+
+.extra-information-layout {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+    width: 302px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+
+

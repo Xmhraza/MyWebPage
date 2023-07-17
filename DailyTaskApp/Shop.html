@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<header>
+    <link rel="stylesheet" href="style/Shop.css">
+    </link>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</header>
+
+<body>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("NavBar.html");
+        });
+    </script>
+    <nav id="nav-placeholder"></nav>
+    <div class="shop-layout">
+        <div class="ShopPage">
+            <h2 class="ShopHeading">Your Shop</h2>
+            <div class="shop-grid">
+                <h3>Item</h3>
+                <h3>Price</h3>
+            </div>
+            <div class="shop-grid-show">
+
+            </div>
+        </div>
+        <div>
+            <h2 style="font-family: Arial;">
+                Add To Shop
+            </h2>
+            <div class="add-to-shop">
+                <input placeholder="Insert Shop Item" class="shop-task">
+                <select class="shop-points">
+                    <option value=1 selected>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                    <option value=10>10</option>
+                </select>
+                <button class="shop-add">Add</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script type="module" src="scripts/Shop.js"></script>
+
+
+</html>

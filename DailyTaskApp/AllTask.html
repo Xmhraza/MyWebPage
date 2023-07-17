@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<header>
+    <link rel="stylesheet" href="style/AllTask.css">
+    </link>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</header>
+
+<body>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("NavBar.html");
+        });
+    </script>
+    <nav id="nav-placeholder"></nav>
+    <div class="divide-table-input">
+        <div class="AllPage">
+            <div class="todo-grid">
+                <a class="border">Daily Tasks</a>
+                <a class="border">Points Given</a>
+                <a class="border">Task Date</a>
+                <a class="border"></a>
+            </div>
+            <div class="todo-all-show"></div>
+        </div>
+        <div class="data-input">
+            <h2 class="input-heading">
+                Add A Task
+            </h2>
+            <div class="data-input-form">
+                <input type="" placeholder="Add Task Here" class="task-description">
+                <select name="Points" class="Points">
+                    <option value=1 selected>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                    <option value=10>10</option>
+                </select>
+            </div>
+            <input type="date" class="date-input">
+            <div class="popup popup-hidden">Please add a date for the future</div>
+
+            <button class="add-button">Add</button>
+        </div>
+    </div>
+
+
+</body>
+
+<script type="module" src="scripts/AllTask.js"></script>
+
+</html>
