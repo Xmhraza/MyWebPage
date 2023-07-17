@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/Navbar.css">
+    <link rel="stylesheet" href="style/skills.css">
+    <link rel="stylesheet" href="style/Footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Document</title>
@@ -13,11 +16,11 @@
 <body class="bg">
     <script>
         $(function () {
-            $("#nav-placeholder").load("Data/NavBar.html #topnav #navbar-css");
+            $("#nav-placeholder").load("Data/NavBar.html");
             $(".work-experience-data").load("Data/workExperience.html");
             $(".education-data").load("Data/Education.html");
             $(".extra-curricular-data").load("Data/ECA.html");
-            $(".skill-layout").load("Data/skills.html #skills-css");
+            $(".skill-layout").load("Data/skills.html");
         });
     </script>
     <div id="mySidenav" class="sidenav">
@@ -107,7 +110,7 @@
         </div>
         <script>
             $(function () {
-                $("#footer-placeholder").load("Data/Footer.html #footer-css");
+                $("#footer-placeholder").load("Data/Footer.html");
             });
         </script>
         <div id="footer-placeholder"></div>
