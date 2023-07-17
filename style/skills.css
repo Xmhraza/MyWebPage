@@ -26,6 +26,10 @@ div .child .information {
     margin: auto;
 }
 
+div .child .information li {
+    text-align: left;
+}
+
 div .child:hover {
     transform: translate(1px,-20px);
     overflow-y: visible;

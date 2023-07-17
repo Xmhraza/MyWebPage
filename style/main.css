@@ -143,6 +143,10 @@ body {
   overflow-x: scroll;
 }
 
+.skill-layout::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 25px;
+}
 
 .skill-layout::-webkit-scrollbar {
   height: 10px;
@@ -157,11 +161,15 @@ body {
   border-radius: 25px;
 }
 
-
-.skill-layout::-webkit-scrollbar-thumb {
+.back::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 25px;
 }
+
+.back::-webkit-scrollbar {
+  width: 10px;
+}
+
 
 
 /* The side navigation menu */
@@ -257,16 +265,16 @@ div .extra-information .back .header {
 
 
 div .extra-information .back .information {
-  text-align: center;
-  margin-top: 25%;
+  /* text-align: center; */
+  margin-top: 10%;
 }
 
 .extra-information>.front {
   transform: perspective(600px) rotateY(0deg);
   background-size: 500% 500%;
-  background-image: linear-gradient(-45deg, rgb(30, 29, 30) 0%, rgb(30, 29, 30) 45%, rgb(56, 53, 53) 50%,rgb(30, 29, 30) 55%, rgb(30, 29, 30) 100%);
+  background-image: linear-gradient(-45deg, rgb(30, 29, 30) 20%, rgb(44, 41, 44) 45%, rgb(56, 53, 53) 50%,rgb(44, 42, 44) 55%, rgb(30, 29, 30) 80%);
   -webkit-animation: AnimateBG2 10s ease infinite;
-  animation: AnimateBG2 10s ease infinite;
+  animation: AnimateBG2 8s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG2 {
@@ -291,6 +299,11 @@ div .extra-information .back .information {
 
 .extra-information > .back {
   transform: perspective(600px) rotateY(180deg); 
+  overflow-y: auto;
+}
+
+.extra-information > .back .information ul {
+  list-style: none;
 }
 
 .extra-information>.front h2 {
