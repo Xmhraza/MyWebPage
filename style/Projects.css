@@ -207,6 +207,11 @@ div.dropdown-content {
     z-index: 19;
 }
 
+.eti-video {
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
 .media-description {
     text-align: center;
     font-family: "Lato";
