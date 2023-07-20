@@ -1,6 +1,6 @@
 html {
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Lato';
   scroll-behavior: smooth;
 }
 
@@ -54,11 +54,11 @@ body {
 .about-me {
   margin: auto;
   padding: 20px 20px;
-  background-color: rgb(30, 29, 30);
+  background-color: transparent;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 200px;
   border-radius: 25px;
-  border-left: 1px solid rgb(255, 255, 255);
+  /* border-left: 1px solid rgb(255, 255, 255); */
 }
 
 .about-me-header {
@@ -71,11 +71,11 @@ body {
 .sector {
   height: 0;
   overflow: auto;
-  background: rgb(30, 29, 30);
+  background: transparent;
   width: 95%;
   margin: auto;
   border-radius: 25px;
-  padding: 10px 12px;
+  /* padding: 10px 12px; */
   overscroll-behavior: contain;
 }
 
@@ -91,14 +91,52 @@ body {
   animation: slide-back 0.5s normal backwards;
 }
 
-.ButtonLooking {
-  background-color: rgb(79, 58, 80);
+.ButtonLooking,
+.header-font {
+  background-color: transparent;
   padding: 10px 12px;
   cursor: pointer;
   font-size: xx-large;
   border-bottom: white solid 1px;
-  border-left: white solid 1px;
   border-radius: 10px;
+  -webkit-background-clip: text;
+  background-size: 500% 500%;
+  background-clip: text;
+  background-image: linear-gradient(90deg, rgb(6, 244, 232) 0%, rgb(9, 247, 132) 80%);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: AnimateBG3 3s ease infinite;
+  animation: AnimateBG3 3s ease infinite;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@-webkit-keyframes AnimateBG3 {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes AnimateBG3 {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 @keyframes slide {
@@ -123,13 +161,20 @@ body {
 
 /* Skill layout and scroll */
 .header-font {
-  background-color: rgb(79, 58, 80);
-  padding: 10px 12px;
+  padding: 10px 50px;
   font-size: xx-large;
-  border-bottom: white solid 1px;
-  margin-top: 10%;
-  border-left: white solid 1px;
+  border-right: white solid 1px;
+  border-bottom: none;
+  max-width: 250px;
   border-radius: 10px;
+  margin: auto;
+  line-height: 300px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: 300px auto;
+  margin-top: 200px;
 }
 
 .skill-layout {
@@ -237,7 +282,7 @@ a {
 .extra-information-layout {
   display: grid;
   grid-template-columns: auto auto;
-  margin-top: 10%;
+  margin-top: 200px;
 }
 
 
@@ -256,7 +301,7 @@ a {
 
 div .extra-information .back .header {
   font-size: larger;
-  background-color: rgb(79, 58, 80);
+  background-color: transparent;
   line-height: 100px;
   text-align: center;
   border-top-right-radius: 25px;
@@ -272,16 +317,31 @@ div .extra-information .back .information {
 .extra-information>.front {
   transform: perspective(600px) rotateY(0deg);
   background-size: 500% 500%;
-  background-image: linear-gradient(-45deg, rgb(30, 29, 30) 20%, rgb(44, 41, 44) 45%, rgb(56, 53, 53) 50%,rgb(44, 42, 44) 55%, rgb(30, 29, 30) 80%);
+  background-image: linear-gradient(-45deg, rgb(30, 29, 30) 20%, rgb(44, 41, 44) 45%, rgb(56, 53, 53) 50%, rgb(44, 42, 44) 55%, rgb(30, 29, 30) 80%);
   -webkit-animation: AnimateBG2 10s ease infinite;
   animation: AnimateBG2 8s ease infinite;
+}
+
+.extra-information>.front>.front-heading {
+  -webkit-background-clip: text;
+  background-size: 500% 500%;
+  background-clip: text;
+  background-image: linear-gradient(90deg, rgb(6, 244, 232) 0%, rgb(9, 247, 132) 80%);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: AnimateBG3 3s ease infinite;
+  animation: AnimateBG3 3s ease infinite;
+  font: "Lato";
+  font-size: xx-large;
+  margin-top: 35%;
+  text-align: center;
 }
 
 @-webkit-keyframes AnimateBG2 {
   0% {
     background-position: 0% 0%;
   }
- 
+
   100% {
     background-position: 100% 100%;
   }
@@ -291,27 +351,24 @@ div .extra-information .back .information {
   0% {
     background-position: 0% 0%;
   }
-  
+
   100% {
     background-position: 100% 100%;
   }
 }
 
-.extra-information > .back {
-  transform: perspective(600px) rotateY(180deg); 
+.extra-information>.back {
+  transform: perspective(600px) rotateY(180deg);
   overflow-y: auto;
 }
 
-.extra-information > .back .information ul {
+.extra-information>.back .information ul {
   list-style: none;
 }
 
-.extra-information>.front h2 {
-  margin-top: 35%;
-}
-
 /* style the maincontainer class with all child div's of class .back */
-.extra-information > .back, .front {
+.extra-information>.back,
+.front {
   position: absolute;
   width: 500px;
   height: 400px;

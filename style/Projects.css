@@ -1,0 +1,356 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato";
+    background-image: linear-gradient(20deg, black 0%, rgb(53, 52, 52) 100%);
+}
+
+.header-style {
+    height: 600px;
+    padding: 10px 10px;
+    background-image: url('../Media/background-ge9d3aa02a_1920.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+    align-items: center;
+    border-bottom: white 1px solid;
+}
+
+.project-title {
+    font-family: "Lato";
+    -webkit-background-clip: text;
+    background-size: 500% 500%;
+    background-clip: text;
+    background-image: linear-gradient(-45deg, rgb(234, 7, 7) 20%, rgb(202, 114, 114) 45%, rgb(215, 169, 169) 50%, rgb(202, 114, 114) 55%, rgb(234, 7, 7) 80%);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    margin-left: 200px;
+    margin-top: 215px;
+    -webkit-animation: AnimateBG2 7s ease infinite;
+    animation: AnimateBG2 7s ease infinite;
+}
+
+.header-style .project-nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.project-nav-link:hover {
+    opacity: 0.7;
+}
+
+.header-style .project-nav .project-nav-style {
+    width: 500px;
+    padding: 30px 70px;
+    border-radius: 0px 0px 0px 25px;
+    /* border: 1px solid; */
+    /* margin-right: 10px; */
+}
+
+.project-nav-style a, .dropbtn {
+    font-family: "Lato";
+    margin-left: 7%;
+    font-size: larger;
+    -webkit-background-clip: text;
+    background-size: 500% 500%;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(-45deg, rgb(234, 7, 7) 20%, rgb(202, 114, 114) 45%, rgb(215, 169, 169) 50%, rgb(202, 114, 114) 55%, rgb(234, 7, 7) 80%);
+    text-decoration: none;
+    -webkit-animation: AnimateBG2 6s ease infinite;
+    animation: AnimateBG2 6s ease infinite;
+}
+
+.dropdown {
+    display: inline;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(223, 221, 223, 0.3);
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+  }
+  
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgba(223, 221, 223, 0.3);
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+@-webkit-keyframes AnimateBG2 {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes AnimateBG2 {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.project-holder {
+    color: white;
+    min-height: 3000;
+}
+
+.reveal {
+    display: flex;
+    float: left;
+    margin-top: 100px;
+    width: 0;
+    /* max-height: 800px; */
+    transition: 0.7s all ease-in-out;
+    background-color: transparent;
+    /* rgb(61, 52, 54); */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    clear: both;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0px 25px 25px 0px;
+    border: 1px solid white;
+    /* border-right: 1px solid white;
+    border-left: 1px solid white; */
+    position: relative;
+    z-index: 200;
+}
+
+.right-sided {
+    float: right;
+    border-radius: 25px 0px 0px 25px;
+}
+
+
+.row-grid {
+    display: grid;
+    grid-template-rows: 100px 500px;
+}
+
+.column-grid {
+    display: grid;
+    grid-template-columns: 600px 600px;
+}
+
+.project-header-style {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(193, 49, 49);
+    text-align: center;
+}
+
+.project-information-style {
+    background-color: transparent;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.project-information-style::-webkit-scrollbar {
+    width: 10px;
+}
+
+.project-information-style::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.project-media {
+    background-color: transparent;
+    text-align: center;
+    max-height: 450px;
+    max-width: 600px;
+}
+
+.media-row-grid {
+    display: grid;
+    grid-template-rows: 450px 150px;
+    background-color: transparent;
+    /* border: 0.2px solid; */
+}
+
+
+.eti-image {
+    width: 55px;
+    z-index: 19;
+}
+
+.media-description {
+    text-align: center;
+    font-family: "Lato";
+}
+
+.media-description a {
+    color: red;
+    text-decoration: none;
+}
+
+.media-scroll-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 500px;
+    column-gap: 50px;
+    overscroll-behavior-inline: contain;
+    scrollbar-gutter: stable;
+    overflow-x: hidden;
+    /* overflow-x: scroll; */
+}
+
+.media-scroll-container img {
+    width: 496px;
+    height: 279px;
+    padding: 50px;
+}
+
+.media-scroll-container img.react-image {
+    width: 502px;
+    height: 310px;
+    display: relative;
+}
+
+.project-media>.project-media-scroll-btn-lft {
+    position: relative;
+    right: 275px;
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+}
+
+.project-media>.project-media-scroll-btn-rgt {
+    position: relative;
+    left: 275px;
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+}
+
+.project-list {
+    z-index: 200;
+    clear: both;
+    color: rgb(255, 255, 255);
+    margin-top: 3000px;
+    height: 1000px;
+    background-color: rgb(28, 24, 24);
+    padding: 5px;
+}
+
+.project-list-holder {
+    width: 80%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.project-list-entry {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin-bottom: 20px;
+}
+
+.project-list-link {
+    text-decoration: none;
+    -webkit-background-clip: text;
+    background-size: 500% 500%;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(-45deg, rgb(234, 7, 7) 20%, rgb(202, 114, 114) 45%, rgb(215, 169, 169) 50%, rgb(202, 114, 114) 55%, rgb(234, 7, 7) 80%);
+    text-decoration: none;
+    -webkit-animation: AnimateBG2 2s ease infinite;
+    animation: AnimateBG2 2s ease infinite;
+    font-size: large;
+    margin: auto;
+
+}
+
+.project-current {
+    height: 1300px;
+    background-image: linear-gradient(20deg, black 0%, rgb(25, 24, 24) 100%);
+    color: white;
+    padding: 1px;
+}
+
+.project-current-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.project-current-grid img {
+    width: 700px;
+    height: 700px;
+}
+
+.project-current-entry {
+    margin-top: 120px; 
+    margin-left: 150px; 
+    overflow-y: auto; 
+    max-height: 600px;
+}
+
+.project-current-header {
+    font-size: xx-large;
+}
+
+.project-current-status {
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+.project-current-entry::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.project-current-entry::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+.activate-blanket {
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3600px;
+    background: black;
+    opacity: 0.5;
+    z-index: 100;
+}

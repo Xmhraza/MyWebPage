@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/skills.css">
     <link rel="stylesheet" href="style/Footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Document</title>
 </head>
@@ -73,11 +74,14 @@
                     <div class="extra-curricular-data show-data"></div>
                 </div>
 
-                <div id="skills" class="header-font">Skills</div>
+                <div class="skill-grid">
+                    <div id="skills" class="header-font">Skills</div>
 
-                <div class="skill-layout">
+                    <div class="skill-layout">
 
+                    </div>
                 </div>
+
 
                 <div class="extra-information-layout">
                     <div class="extra-information">
@@ -85,17 +89,27 @@
                             <div class="header">Job Interests</div>
                             <div class="information">
                                 <ul>
-                                    <li><h4>Software Development/Engineering</h4></li>
-                                    <li><h4>IT related positions</h4></li>
-                                    <li><h4>Consultancy</h4></li>
-                                    <li><h4>Improvements in the Education Sector</h4></li>
-                                    <li><h4>Game Development</h4></li>
-                                    
+                                    <li>
+                                        <h4>Software Development/Engineering</h4>
+                                    </li>
+                                    <li>
+                                        <h4>IT related positions</h4>
+                                    </li>
+                                    <li>
+                                        <h4>Consultancy</h4>
+                                    </li>
+                                    <li>
+                                        <h4>Improvements in the Education Sector</h4>
+                                    </li>
+                                    <li>
+                                        <h4>Game Development</h4>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
                         <div class="front">
-                            <h2>Job Interests</h2>
+                            <div class="front-heading">Job Interests</div>
                         </div>
 
                     </div>
@@ -104,19 +118,26 @@
                             <div class="header">Current Projects</div>
                             <div class="information">
                                 <ul>
-                                    <li><h4>Further improvements in the Portfolio</h4>
-                                    I am working on a project tab that will showcase my projects in much more detail</li>
-                                    <li><h4>Django Project</h4>
-                                    Using the Django web framework, I am creating an interactive web page for blogging
+                                    <li>
+                                        <h4>Further improvements in the Portfolio</h4>
+                                        I am working on a project tab that will showcase my projects in much more detail
                                     </li>
-                                    <li><h4>3D RPG Game</h4>
-                                    Further Improving my understanding on game development, I want to create an RPG game with a much more
-                                 diverse functionality than my previous projects</li>
+                                    <li>
+                                        <h4>Django Project</h4>
+                                        Using the Django web framework, I am creating an interactive web page for
+                                        blogging
+                                    </li>
+                                    <li>
+                                        <h4>3D RPG Game</h4>
+                                        Further Improving my understanding on game development, I want to create an RPG
+                                        game with a much more
+                                        diverse functionality than my previous projects
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="front">
-                            <h2>Current Projects</h2>
+                            <div class="front-heading">Current Projects</div>
                         </div>
 
                     </div>
@@ -164,7 +185,6 @@
             document.getElementById("main").style.marginLeft = "0";
             mySideBar.classList.remove("showSideBar")
         }
-
     }
 
     /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */

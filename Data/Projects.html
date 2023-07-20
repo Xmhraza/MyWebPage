@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../style/Projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body class="body-drop">
+    <div class="blanket">
+    </div>
+    <div class="header-style">
+        <div class="project-title">
+            PROJECTS
+        </div>
+        <div class="project-nav">
+            <nav class="project-nav-style">
+                <div class="dropdown">
+                    <button class="dropbtn link">
+                        Sections
+                        <i class="bi-caret-down-fill"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#eti-adventure">Eti's Adventure</a>
+                        <a href="#daily-task-app">Daily Task App</a>
+                        <a href="#react-app">Weather App</a>
+                        <a href="#portfolio">Portfolio Project</a>
+                    </div>
+                </div>
+                <a class="project-nav-link" href="../index.html"> Portfolio </a>
+                <a class="project-nav-link" href="#project-list"> List</a>
+
+                <a class="project-nav-link" href="#project-current"> Current</a>
+            </nav>
+        </div>
+        <!-- <div class="white-box"></div> -->
+    </div>
+    <div class="project-holder">
+        <div id="eti-adventure" class="reveal">
+            <div class="column-grid">
+                <div class="row-grid">
+                    <div class="project-header-style">
+                        <div style="margin-top: 30px; font-size: xx-large;">Eti's Adventure</div>
+                    </div>
+                    <div class="project-information-style">
+                        <h3>Description</h3>
+                        Eti's Adventure is a metroidvania game that focuses on two different approaches, one related to
+                        puzzles and
+                        the other related to parkour. Their are different varieties of puzzles in the puzzle mode, some
+                        of which are based
+                        around gamified established questions. The first part of the game is completed. Hopefully the
+                        experience of the game
+                        is positive for all of you!
+
+                        <h3>Features</h3>
+                        <ul>
+                            <li>The game includes multiple mobs/Entities including the player with different trades
+                                (i.e., movement, jumping
+                                , shooting, etc.)</li>
+                            <li>The game has two different puzzle functionalities, both serving the purpose of testing
+                                players ability to logically
+                                and abstractly think. The two modes are :
+                                <ul>
+                                    <li>The IqQuestionPuzzle class is used to generate a puzzle based around the data
+                                        that it is provided
+                                        (using gamification of real Iq questions based on pattern finding)</li>
+                                    <li>The MatcherPuzzleGenerator class is used to generate a puzzle based on data that
+                                        is provided through manual
+                                        designing</li>
+                                </ul>
+                            </li>
+                            <li>The game has a built in save system that allows players to save their state and carry on
+                                from the last save point</li>
+                            <li>The game has a feedback system used to provide feedback regarding questions that the
+                                players have attempted. This feedback
+                                system is primarily used for IqQuestionPuzzles
+                            </li>
+                            <li> The game includes different maps for the players to play in including maps that focus
+                                on parkour as opposed to puzzles
+                                to increase the longevity of the game
+                            </li>
+                            <li>more features such as portals, keys, doors, boss fights, moving platforms, etc. to give
+                                the game more depth</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="media-row-grid">
+                    <div class="project-media">
+                        <video class="eti-video" width="580" height="450" autoplay muted loop>
+                            <source src="../Media/Game2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="media-description">
+                        <div>
+                            The game is fully functional and available on itch.io. In order to download the game, please
+                            press on the little guy
+                        </div>
+                        <br>
+                        <a href="https://hamidraza123.itch.io/etis-adventure"><img class="eti-image"
+                                src="../Media/SPA_Player_Ginger.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="daily-task-app" class="reveal right-sided">
+            <div class="column-grid">
+                <div class="media-row-grid">
+                    <div class="project-media">
+                        <button class="project-media-scroll-btn-lft"><i class="bi-arrow-left-circle"></i></button>
+                        <div class="media-scroll-container">
+                            <div><img src="../Media/DailyTaskImages/DailyTask2.png"></div>
+                            <div><img src="../Media/DailyTaskImages/DailyTask3.png"></div>
+                            <div><img src="../Media/DailyTaskImages/DailyTask1.png"></div>
+                            <div><img src="../Media/DailyTaskImages/DailyTask4.png"></div>
+                        </div>
+                        <button class="project-media-scroll-btn-rgt"><i class="bi-arrow-right-circle"></i></button>
+                    </div>
+                    <div class="media-description">
+                        <div>
+                            The website can be accessed by pressing the icon below. Feel free to use and test it
+                        </div>
+                        <br>
+                        <a href="../DailyTaskApp/TaskManager.html"><img class="eti-image"
+                                src="../Media/DailyTaskImages/time-management.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="row-grid">
+                    <div class="project-header-style">
+                        <div style="margin-top: 30px; font-size: xx-large;">Daily Task Website</div>
+                    </div>
+                    <div class="project-information-style">
+                        <h3>Description</h3>
+                        The Daily Task Website was a small scale project that I set for myself to improve my web
+                        development skills. It was
+                        created from scratch (without templates) using HTML, CSS and Javascript. JQuery was used was
+                        better file management and
+                        loading. The main purpose of the website was to provide users with a platform where they can set
+                        daily tasks for themselves
+                        while using the gamification methodology to increase motivation and interest
+
+                        <h3>Features</h3>
+                        <ul>
+                            <li>The website allows users to add and delete daily tasks and processes them by their due
+                                date</li>
+                            <li>There are three primary pages for the website. They are as follows :
+                                <ul>
+                                    <li>The Daily Task Page : This is used to show the tasks of the current day as well
+                                        as upcoming tasks with the
+                                        filter of changing the upcoming date to 1, 3 or 7 respectively. User can
+                                        complete or delete the daily tasks
+                                        available for the current day.
+                                    </li>
+                                    <li>The Shop Page : This page includes a table that the user creates themselves. The
+                                        purpose of this page is to
+                                        hold items that the user can buy based around the amount of points that the
+                                        users have earned through completing
+                                        daily tasks
+                                    </li>
+                                    <li>The All Task Page : This page includes a table that of all the tasks that the
+                                        user have added to the system. They can
+                                        delete any task that they have added. This page also allows user to add tasks
+                                        for the future.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Currently, the website uses the browser's local storage to save the current points,
+                                tasks, shop items, etc.</li>
+                            <li>All of the functionality was done in JavaScript (The main purpose was to test/improve my
+                                skills in JS)
+                            </li>
+                        </ul>
+
+                        <h3>Improvements</h3>
+                        <div>The next step is to create a similar app using a database to store all of the user's
+                            information. Current plan is
+                            to use express.js and mysql for the development phase. The next feature is the introduction
+                            of milestones that can consist
+                            of a number of tasks and provide more points once all the tasks are completed
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="react-app" class="reveal">
+            <div class="column-grid">
+                <div class="row-grid">
+                    <div class="project-header-style">
+                        <div style="margin-top: 30px; font-size: xx-large;">Weather App</div>
+                    </div>
+                    <div class="project-information-style">
+                        <h3>Description</h3>
+                        The Daily Task Website was a small scale project that I set for myself to improve my web
+                        development skills. It was
+                        created from scratch (without templates) using HTML, CSS and Javascript. JQuery was used was
+                        better file management and
+                        loading. The main purpose of the website was to provide users with a platform where they can set
+                        daily tasks for themselves
+                        while using the gamification methodology to increase motivation and interest
+
+                        <h3>Features</h3>
+                        <ul>
+                            <li>The website allows users to add and delete daily tasks and processes them by their due
+                                date</li>
+                            <li>There are three primary pages for the website. They are as follows :
+                                <ul>
+                                    <li>The Daily Task Page : This is used to show the tasks of the current day as well
+                                        as upcoming tasks with the
+                                        filter of changing the upcoming date to 1, 3 or 7 respectively. User can
+                                        complete or delete the daily tasks
+                                        available for the current day.
+                                    </li>
+                                    <li>The Shop Page : This page includes a table that the user creates themselves. The
+                                        purpose of this page is to
+                                        hold items that the user can buy based around the amount of points that the
+                                        users have earned through completing
+                                        daily tasks
+                                    </li>
+                                    <li>The All Task Page : This page includes a table that of all the tasks that the
+                                        user have added to the system. They can
+                                        delete any task that they have added. This page also allows user to add tasks
+                                        for the future.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Currently, the website uses the browser's local storage to save the current points,
+                                tasks, shop items, etc.</li>
+                            <li>All of the functionality was done in JavaScript (The main purpose was to test/improve my
+                                skills in JS)
+                            </li>
+                        </ul>
+
+                        <h3>Improvements</h3>
+                        <div>The next step is to create a similar app using a database to store all of the user's
+                            information. Current plan is
+                            to use express.js and mysql for the development phase. The next feature is the introduction
+                            of milestones that can consist
+                            of a number of tasks and provide more points once all the tasks are completed
+                        </div>
+                    </div>
+                </div>
+                <div class="media-row-grid">
+                    <div class="project-media">
+                        <button class="project-media-scroll-btn-lft"><i class="bi-arrow-left-circle"></i></button>
+                        <div class="media-scroll-container">
+                            <div><img class="react-image" src="../Media/ReactApp/5.png"></div>
+                            <div><img class="react-image" src="../Media/ReactApp/6.png"></div>
+                            <div><img class="react-image" src="../Media/ReactApp/7.png"></div>
+                        </div>
+                        <button class="project-media-scroll-btn-rgt"><i class="bi-arrow-right-circle"></i></button>
+                    </div>
+                    <div class="media-description">
+                        <div>
+                            The website can be accessed by pressing the icon below. Feel free to use and test it
+                        </div>
+                        <br>
+                        <a href="https://github.com/Xmhraza/Portfolio/tree/main/WeatherApp-React(NodeJs)"><i
+                                style="font-size: xx-large;" class="bi-cloud-fill"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="portfolio" class="reveal right-sided">
+            <div class="column-grid">
+                <div class="media-row-grid">
+                    <div class="project-media">
+                        <button class="project-media-scroll-btn-lft"><i class="bi-arrow-left-circle"></i></button>
+                        <div class="media-scroll-container">
+                            <div><img class="react-image" src="../Media/Portfolio/portfolio1.png"></div>
+                            <div><img class="react-image" src="../Media/Portfolio/portfolio2.png"></div>
+                        </div>
+                        <button class="project-media-scroll-btn-rgt"><i class="bi-arrow-right-circle"></i></button>
+                    </div>
+                    <div class="media-description">
+                        <div>
+                            The website can be accessed by pressing the icon below or by pressing the portfolio tab in
+                            the navbar.
+                        </div>
+                        <br>
+                        <a href="../index.html"><img class="eti-image" src="../Media/Portfolio/Notes.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="row-grid">
+                    <div class="project-header-style">
+                        <div style="margin-top: 30px; font-size: xx-large;">My Portfolio</div>
+                    </div>
+                    <div class="project-information-style">
+                        <h3>Description</h3>
+                        As a software engineering student, I always had a desire to create a website that displays
+                        information regarding myself,
+                        my achievements and my projects. For this website, I started from scratch, not using a template,
+                        so I could test my
+                        web development knowledge. This also allowed me to completely design my website. The portfolio
+                        shows all of my work experience,
+                        my education, extra curriculars, interests, etc.
+                        <br>
+                        This Portfolio also allows me to show my web designing skills as it uses HTML and vanilla css
+                        with a hint of javascript for
+                        smoother transitions.
+                        <h3>Improvements</h3>
+                        <div>There is a lot that I want to cover within the portfolio, however, there needs to be a
+                            balance of the amount of information
+                            that I provide with the general design of the website. I want to keep on updating this
+                            portfolio further as I learn new skills
+                            or enhance previously learned skills, complete more projects and in the future, even add a
+                            page specifically for showing my day
+                            to day life
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="project-list" class="project-list">
+        <div class="project-title">Project List</div>
+        <div style="width: 80%; margin: auto;">This list contains all of the extra projects that I have completed during
+            my education. This include all of the starting projects that
+            I have done, projects that are purely based around code, projects that are incomplete, etc.</div>
+        <div class="project-list-holder">
+            <div class="project-list-table">
+                <div class="project-list-entry">
+                    <div style="margin: auto;">JAVA OOPs Project</div>
+                    <div>This project comprises of JAVA code used to create a basic game. The game focuses on OOPs
+                        features such as polymorphism
+                        and inheritance. The link contains both the raw java files and a blueJ package to run the game
+                    </div>
+                    <a class="project-list-link" href="https://github.com/Xmhraza/Portfolio/tree/main/JavaGame">Link</a>
+                </div>
+            </div>
+            <div class="project-list-table">
+                <div class="project-list-entry">
+                    <div style="margin: auto;">TimeSheet Application</div>
+                    <div>This application was a personal project to learn how to display data stored within a database
+                        in the form of tables and
+                        graphs. The project is incomplete, however the data can be added, and is displayed in different
+                        graph variations
+                    </div>
+                    <a class="project-list-link"
+                        href="https://github.com/Xmhraza/Portfolio/tree/main/TimesheetApplication%20(Web%20Languages)">Link</a>
+                </div>
+            </div>
+            <div class="project-list-table">
+                <div class="project-list-entry">
+                    <div style="margin: auto;">Python Neural Networks</div>
+                    <div>This includes a project that focuses on creating a python program using the pytorch library to
+                        analyse images from the
+                        CIFAR-10 dataset, run it through a convolutional neural network script and use the data gathered
+                        to train the model
+                    </div>
+                    <a class="project-list-link"
+                        href="https://github.com/Xmhraza/Portfolio/tree/main/CNN-Python/CNN-Python">Link</a>
+                </div>
+            </div>
+            <div class="project-list-table">
+                <div class="project-list-entry">
+                    <div style="margin: auto;">Django Application</div>
+                    <div>The application was created to have a similar website to ebay or amazon. The project consists
+                        of multiple pages, including
+                        a profile page, an auction page, a listing page, etc. It makes use of vue.js as the frontend.
+                        The project does require a lot
+                        of further changes/updates including the designing of the web app. The functionality of the
+                        project is complete but needs to
+                        be finetuned further.
+                    </div>
+                    <a class="project-list-link"
+                        href="https://github.com/Xmhraza/Portfolio/tree/main/Django(Python)-Vue%20Auction%20Application">Link</a>
+                </div>
+            </div>
+            <div class="project-list-table">
+                <div class="project-list-entry">
+                    <div style="margin: auto;">TimeTable Application</div>
+                    <div>This is a timetable application used to provide an overview of how a time table application
+                        should behave. It has multiple
+                        pages including pages designed for different users, a login page, a timesheet page, etc.
+                    </div>
+                    <a class="project-list-link"
+                        href="https://github.com/Xmhraza/Portfolio/tree/main/SE_Project(Web%20Languages)">Link</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="project-current" class="project-current">
+        <div class="project-title">Current Projects</div>
+        <div style="width: 80%; margin: auto;">This section covers all the projects that I am currently focusing on,
+            planning or starting</div>
+
+        <div class="project-current-grid">
+            <div class="project-current-entry">
+                <div style="margin-bottom: 60px;">
+                    <div class="project-current-header">3D RPG Game</div>
+                    <div class="project-current-status" style="color: lightgreen;">In Progress</div>
+                    <div>This project focuses on creation of a 3D RPG game using the Unity Game Engine and C#. The game
+                        will have a much better
+                        and improved functionality as compared to my previous projects. Some features would be :
+                        <ul>
+                            <li> An Inventory System
+                            </li>
+                            <li> Multiple Boss Fights</li>
+                            <li>Looting Mechanics</li>
+                            <li>Better Mob AI</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-bottom: 60px;">
+                    <div class="project-current-header">Daily Task App</div>
+                    <div class="project-current-status" style="color: yellow;">Updating</div>
+                    <div>An Update on the Daily Task App where a milestone page will be provided which can be completed
+                        by completing multiple
+                        daily tasks. Daily tasks will be divided into multiple categories. All milestones and categories
+                        can be created
+                    </div>
+                </div>
+                <div style="margin-bottom: 60px;">
+                    <div class="project-current-header">Django Blog Page</div>
+                    <div class="project-current-status" style="color: blue;">Planning</div>
+                    <div>Currently in the designing phase. The Blog Page will allow me to share personal experiences,
+                        updates and achievements.
+                        This blog page will be linked to the portfolio page and add a great depth to it
+                    </div>
+                </div>
+
+            </div>
+            <img src="../Media/manWorking.png" alt="">
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    reveal();
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        var windowHeight = window.innerHeight;
+        var activateBlanket = document.querySelector(".header-style")
+        var HeaderBot = activateBlanket.getBoundingClientRect().bottom;
+        if (HeaderBot < windowHeight - 400) {
+            document.querySelector(".blanket").classList.add("activate-blanket");
+        } else {
+            document.querySelector(".blanket").classList.remove("activate-blanket");
+        }
+        for (var i = 0; i < reveals.length; i++) {
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 300;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].style.width = "1200px";
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+                reveals[i].style.width = "0px";
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
+
+    document.querySelectorAll('.project-media-scroll-btn-lft')
+        .forEach((dayButton, index) => {
+            dayButton.addEventListener('click', () => {
+                let leftButton = document.querySelectorAll('.media-scroll-container')[index];
+                leftButton.scrollBy({
+                    left: -550,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    document.querySelectorAll('.project-media-scroll-btn-rgt')
+        .forEach((dayButton, index) => {
+            dayButton.addEventListener('click', () => {
+                let rightButton = document.querySelectorAll('.media-scroll-container')[index];
+                rightButton.scrollBy({
+                    left: 550,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    function SetButtonHeight() {
+        document.querySelectorAll('.project-media-scroll-btn-lft')
+            .forEach((dayButton, index) => {
+                let leftButton = document.querySelectorAll('.media-scroll-container')[index];
+                document.querySelectorAll('.project-media-scroll-btn-lft')[index].style.top = leftButton.clientHeight / 2 + 20 + "px";
+            });
+        document.querySelectorAll('.project-media-scroll-btn-rgt')
+            .forEach((dayButton, index) => {
+                let rightButton = document.querySelectorAll('.media-scroll-container')[index];
+                document.querySelectorAll('.project-media-scroll-btn-rgt')[index].style.bottom = rightButton.clientHeight / 2 + 20 + "px";
+            });
+    }
+
+    SetButtonHeight();
+
+</script>
+
+</html>
