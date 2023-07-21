@@ -258,7 +258,7 @@ a {
 }
 
 .profile-img {
-  max-width: 80%;
+  width: 160px;
   border-radius: 100%;
   box-shadow: 1px 10px 5px rgb(39, 40, 40);
   display: block;
@@ -546,5 +546,22 @@ div .extra-information .back .information {
 
   .back::-webkit-scrollbar, .sector::-webkit-scrollbar {
     width: 5px;
+  }
+
+  .profile-img { 
+    width: 50px;
+  }
+
+  .sidenav .sector-main-heading {
+    font-size: 10px;
+    margin-top: -3%;
+  }
+
+  .sidenav a {
+    font-size: 6px;
+  }
+
+  .sidenav {
+    font-size: 5px;
   }
 }
