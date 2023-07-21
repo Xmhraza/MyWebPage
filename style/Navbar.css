@@ -53,6 +53,7 @@
 
 
 .dropdown .dropbtn {
+    font-size: 17px;
     border: none;
     outline: none;
     background-color: inherit;
@@ -105,8 +106,9 @@ div.dropdown-content {
         font-size: x-small;
     }
 
-    .link {
+    .link, .dropdown .dropbtn {
         font-size: 8px;
+        
     }
 
     div .child .information {

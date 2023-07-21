@@ -239,7 +239,7 @@ body {
 
 /* The side navigation menu */
 .sidenav {
-  height: 100%;
+  height: 100vh;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -258,7 +258,7 @@ a {
 }
 
 .profile-img {
-  max-width: 160px;
+  max-width: 80%;
   border-radius: 100%;
   box-shadow: 1px 10px 5px rgb(39, 40, 40);
   display: block;
@@ -289,7 +289,7 @@ a {
   transition: margin-left .5s;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 700px) {
   .sidenav {
     padding-top: 15px;
   }
@@ -492,7 +492,7 @@ div .extra-information .back .information {
 
   .ButtonLooking,
   .header-font {
-    font-size: larger;
+    font-size: x-large;
   }
 
   .extra-information>.front>.front-heading {
