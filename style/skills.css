@@ -8,6 +8,7 @@
     margin-bottom: 7%;
     transition: 0.3s;
     border: 1px solid;
+    overflow: auto;
 }
 
 
@@ -16,8 +17,8 @@ div .child .header {
     background-color: transparent;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    line-height: 70px;
     text-align: center;
+    margin: auto;
 }
 
 
@@ -35,3 +36,34 @@ div .child:hover {
     overflow-y: visible;
     position:relative;
 }
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+    .child {
+      height: 300px;
+      width: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .child {
+      height: 250px;
+      width: 175px;
+      margin-bottom: 0%;
+      grid-template-rows: 30px 170px;
+    }
+
+    div .child .header {
+        font-size: medium;
+    }
+
+    div .child .information {
+        font-size:x-small;
+    }
+
+    div .child .information li { 
+        text-align: left;
+        margin-left: -10%;
+    }
+
+  }
+

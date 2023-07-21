@@ -39,7 +39,7 @@
     float: left;
     padding: 9px 16px;
     text-decoration: none;
-    font-size: 17px;
+    /* font-size: 17px; */
     overflow: hidden;
     font-family: Arial;
     color: white;
@@ -87,4 +87,34 @@ div.dropdown-content {
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  @media screen and (max-width: 1300px) and (min-width: 1000px) {
+    .child {
+      height: 300px;
+      width: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .name {
+     font-size: medium;
+    }
+
+    a {
+        font-size: x-small;
+    }
+
+    .link {
+        font-size: 8px;
+    }
+
+    div .child .information {
+        font-size:x-small;
+    }
+
+    .topnav .linkedin-img {
+        display: none;
+     }
+
   }
