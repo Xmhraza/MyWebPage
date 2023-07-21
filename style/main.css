@@ -285,7 +285,7 @@ a {
   margin-top: 200px;
 }
 
-
+/*  */
 .extra-information {
   display: grid;
   grid-template-rows: auto auto;
@@ -366,6 +366,7 @@ div .extra-information .back .information {
   list-style: none;
 }
 
+/*  */
 /* style the maincontainer class with all child div's of class .back */
 .extra-information>.back,
 .front {
@@ -385,3 +386,46 @@ div .extra-information .back .information {
 .extra-information:hover>.back {
   transform: perspective(600px) rotateY(0deg);
 }
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+
+  .extra-information>.back,
+  .front,
+  .extra-information {
+    width: 350px;
+    height: 275px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+
+  .extra-information>.back,
+  .front,
+  .extra-information {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .extra-information>.back,
+  .front,
+  .extra-information {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .page-layout {
+    grid-template-columns: 0% 100% 0%;
+  }
+
+  .sector, .ButtonLooking {
+    width: 80%;
+    margin: auto;
+  }
+}
+
