@@ -444,12 +444,12 @@ div.dropdown-content {
     }
 
     .project-media {
-        max-width: 400px;
+        max-width: 350px;
         max-height: 350px;
     }
 
     .media-scroll-container {
-        grid-auto-columns: 350px;
+        grid-auto-columns: 300px;
         column-gap: 10px;
     }
 
