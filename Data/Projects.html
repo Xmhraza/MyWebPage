@@ -456,7 +456,16 @@
             var elementTop = reveals[i].getBoundingClientRect().top;
             var elementVisible = 300;
             if (elementTop < windowHeight - elementVisible) {
-                reveals[i].style.width = "1200px";
+                let width = window.innerWidth;
+                if (width <= 1200 && width >= 700) {
+                    reveals[i].style.width = "600px";
+                    console.log("worked");
+                } else if (width < 700) {
+                    reveals[i].style.width = "450px";
+                } else {
+                    reveals[i].style.width = "1200px";
+                    console.log("not worked");
+                } 
                 reveals[i].classList.add("active");
             } else {
                 reveals[i].classList.remove("active");
@@ -492,12 +501,12 @@
         document.querySelectorAll('.project-media-scroll-btn-lft')
             .forEach((dayButton, index) => {
                 let leftButton = document.querySelectorAll('.media-scroll-container')[index];
-                document.querySelectorAll('.project-media-scroll-btn-lft')[index].style.top = leftButton.clientHeight / 2 + 20 + "px";
+                document.querySelectorAll('.project-media-scroll-btn-lft')[index].style.top = leftButton.clientHeight / 2 + 26 + "px";
             });
         document.querySelectorAll('.project-media-scroll-btn-rgt')
             .forEach((dayButton, index) => {
                 let rightButton = document.querySelectorAll('.media-scroll-container')[index];
-                document.querySelectorAll('.project-media-scroll-btn-rgt')[index].style.bottom = rightButton.clientHeight / 2 + 20 + "px";
+                document.querySelectorAll('.project-media-scroll-btn-rgt')[index].style.bottom = rightButton.clientHeight / 2 + 26 + "px";
             });
     }
 

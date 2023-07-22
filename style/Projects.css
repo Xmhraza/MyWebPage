@@ -52,7 +52,8 @@ body {
     /* margin-right: 10px; */
 }
 
-.project-nav-style a, .dropbtn {
+.project-nav-style a,
+.dropbtn {
     font-family: "Lato";
     margin-left: 7%;
     font-size: larger;
@@ -90,19 +91,19 @@ div.dropdown-content {
     text-decoration: none;
     display: block;
     margin: auto;
-  }
-  
-  
-  /* Add a grey background to dropdown links on hover */
-  .dropdown-content a:hover {
+}
+
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
     background-color: rgba(223, 221, 223, 0.3);
     color: black;
-  }
-  
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-  .dropdown:hover .dropdown-content {
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
 @-webkit-keyframes AnimateBG2 {
     0% {
@@ -323,9 +324,9 @@ div.dropdown-content {
 }
 
 .project-current-entry {
-    margin-top: 120px; 
-    margin-left: 150px; 
-    overflow-y: auto; 
+    margin-top: 120px;
+    margin-left: 150px;
+    overflow-y: auto;
     max-height: 600px;
 }
 
@@ -358,4 +359,98 @@ div.dropdown-content {
     background: black;
     opacity: 0.5;
     z-index: 100;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+
+    .project-current-grid img {
+        width: 80%;
+        height: 40%;
+    }
+
+    .media-scroll-container {
+        /* margin-right: -30%; */
+    }
+
+    /* .reveal {
+        border: blue 1px solid;
+        width: 800px;
+    }
+
+    .column-grid {
+        display: grid;
+        grid-template-columns: 400px 400px;
+    }
+    .project-media { 
+        max-width: 400px;
+    }
+
+    .media-scroll-container {
+        grid-auto-columns: 400px;
+     }
+
+
+     .media-scroll-container img {
+        width: 346px;
+        height: 239px;
+        padding: 50px;
+    }
+    
+    .media-scroll-container img.react-image {
+        width: 302px;
+        height: 210px;
+        display: relative;
+    } */
+
+    .column-grid {
+        display: grid;
+        grid-template-rows: 600px 600px;
+        grid-template-columns: none;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .project-current-grid img {
+        width: 80%;
+        height: 40%;
+    }
+
+    .media-scroll-container img {
+        width: 296px;
+        height: 239px;
+        padding: 50px;
+    }
+
+    .media-scroll-container img.react-image {
+        width: 302px;
+        height: 210px;
+        display: relative;
+    }
+
+    .project-media>.project-media-scroll-btn-lft {
+        right: 275px;
+    }
+
+    .project-media>.project-media-scroll-btn-right {
+        left: 10px;
+    }
+
+    .column-grid {
+        display: grid;
+        grid-template-rows: 450px 450px;
+        grid-template-columns: none;
+    }
+
+    .project-media {
+        max-width: 450px;
+    }
+
+    .media-scroll-container {
+        grid-auto-columns: 400px;
+        column-gap: 25px;
+    }
+
+
 }
