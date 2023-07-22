@@ -453,8 +453,17 @@ div.dropdown-content {
         column-gap: 10px;
     }
 
-    .media-row-grid { 
+    .media-row-grid {
         grid-template-rows: 300px 100px;
+    }
+
+    .project-nav {
+        margin-right: -45%;
+    }
+
+    .project-nav-style a,
+    .dropbtn {
+        margin-left: 5%;
     }
 
 
