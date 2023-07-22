@@ -392,7 +392,7 @@
 
         </div>
     </div>
-    <div id="project-current" class="project-current">
+    <div  id="project-current" class="project-current">
         <div class="project-title">Current Projects</div>
         <div style="width: 80%; margin: auto;">This section covers all the projects that I am currently focusing on,
             planning or starting</div>
@@ -501,12 +501,12 @@
         document.querySelectorAll('.project-media-scroll-btn-lft')
             .forEach((dayButton, index) => {
                 let leftButton = document.querySelectorAll('.media-scroll-container')[index];
-                document.querySelectorAll('.project-media-scroll-btn-lft')[index].style.top = leftButton.clientHeight / 2 + 26 + "px";
+                document.querySelectorAll('.project-media-scroll-btn-lft')[index].style.top = leftButton.clientHeight / 2 + 20  + "px";
             });
         document.querySelectorAll('.project-media-scroll-btn-rgt')
             .forEach((dayButton, index) => {
                 let rightButton = document.querySelectorAll('.media-scroll-container')[index];
-                document.querySelectorAll('.project-media-scroll-btn-rgt')[index].style.bottom = rightButton.clientHeight / 2 + 26 + "px";
+                document.querySelectorAll('.project-media-scroll-btn-rgt')[index].style.bottom = rightButton.clientHeight / 2 + 20 + "px";
             });
     }
 

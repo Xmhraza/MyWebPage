@@ -10,7 +10,8 @@ body {
 
 .header-style {
     height: 600px;
-    padding: 10px 10px;
+    width: 100%;
+    padding: 10px 0px;
     background-image: url('../Media/background-ge9d3aa02a_1920.jpg');
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -34,7 +35,7 @@ body {
     animation: AnimateBG2 7s ease infinite;
 }
 
-.header-style .project-nav {
+.project-nav {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -457,13 +458,19 @@ div.dropdown-content {
         grid-template-rows: 300px 100px;
     }
 
-    .project-nav {
-        margin-right: -45%;
-    }
-
     .project-nav-style a,
     .dropbtn {
         margin-left: 5%;
+        font-size: 6px;
+    }
+
+    .header-style .project-nav .project-nav-style {
+        width: 300px;
+        padding: 1px 1px;
+    }
+
+    .project-title { 
+        font-size: 50px;
     }
 
 
