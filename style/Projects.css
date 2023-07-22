@@ -28,7 +28,7 @@ body {
     color: transparent;
     -webkit-text-fill-color: transparent;
     font-size: 70px;
-    margin-left: 200px;
+    margin-left: 20%;
     margin-top: 215px;
     -webkit-animation: AnimateBG2 7s ease infinite;
     animation: AnimateBG2 7s ease infinite;
@@ -420,7 +420,7 @@ div.dropdown-content {
     .media-scroll-container img {
         width: 296px;
         height: 239px;
-        padding: 50px;
+        padding: 20px;
     }
 
     .media-scroll-container img.react-image {
@@ -439,17 +439,22 @@ div.dropdown-content {
 
     .column-grid {
         display: grid;
-        grid-template-rows: 450px 450px;
+        grid-template-rows: 400px 400px;
         grid-template-columns: none;
     }
 
     .project-media {
-        max-width: 450px;
+        max-width: 400px;
+        max-height: 350px;
     }
 
     .media-scroll-container {
-        grid-auto-columns: 400px;
-        column-gap: 25px;
+        grid-auto-columns: 350px;
+        column-gap: 10px;
+    }
+
+    .media-row-grid { 
+        grid-template-rows: 300px 100px;
     }
 
 
