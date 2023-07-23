@@ -418,10 +418,10 @@ div.dropdown-content {
         height: 400px;
     }
 
-    .project-current-grid img {
+    /* .project-current-grid img {
         width: 80%;
         height: 40%;
-    }
+    } */
 
     .media-scroll-container img {
         width: 296px;
@@ -489,6 +489,24 @@ div.dropdown-content {
 
     .project-list-link {
         font-size: 7px;
+    }
+
+    .project-current-grid {
+        display: grid;
+        grid-template-columns: 100%;
+    
+    }
+    
+    .project-current-grid img {
+        width: 700px;
+        height: 700px;
+        display: none;
+    }
+
+    .project-current-entry {
+        margin-left: 15px;
+        /* overflow-y: auto;
+        max-height: 600px; */
     }
 
 }
