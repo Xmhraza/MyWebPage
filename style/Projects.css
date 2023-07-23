@@ -413,6 +413,11 @@ div.dropdown-content {
 }
 
 @media screen and (max-width: 700px) {
+
+    .header-style { 
+        height: 400px;
+    }
+
     .project-current-grid img {
         width: 80%;
         height: 40%;
@@ -461,7 +466,7 @@ div.dropdown-content {
     .project-nav-style a,
     .dropbtn {
         margin-left: 5%;
-        font-size: 6px;
+        font-size: 14px;
     }
 
     .header-style .project-nav .project-nav-style {
