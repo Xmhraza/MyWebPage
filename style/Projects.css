@@ -209,6 +209,11 @@ div.dropdown-content {
     z-index: 19;
 }
 
+.time-image {
+    width: 45px;
+    z-index: 19;
+}
+
 .eti-video {
     margin-top: 30px;
     border-radius: 25px;
