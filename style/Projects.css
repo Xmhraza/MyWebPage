@@ -430,8 +430,8 @@ div.dropdown-content {
 
     .media-scroll-container img {
         width: 296px;
-        height: 239px;
-        padding: 20px;
+        height: 215px;
+        padding: 10px;
     }
 
     .media-scroll-container img.react-image {
