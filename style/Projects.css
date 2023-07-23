@@ -234,10 +234,7 @@ div.dropdown-content {
     grid-auto-flow: column;
     grid-auto-columns: 500px;
     column-gap: 50px;
-    overscroll-behavior-inline: contain;
-    scrollbar-gutter: stable;
     overflow-x: hidden;
-    /* overflow-x: scroll; */
 }
 
 .media-scroll-container img {
@@ -467,13 +464,25 @@ div.dropdown-content {
     .media-scroll-container {
         grid-auto-columns: 300px;
         column-gap: 10px;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scrollbar-gutter: stable;
+    }
+
+    .media-scroll-container::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .media-scroll-container::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 25px;
     }
 
     .media-row-grid {
         grid-template-rows: auto auto;
     }
 
-    .media-description { 
+    .media-description {
         font-size: 10px;
     }
 
@@ -503,9 +512,9 @@ div.dropdown-content {
     .project-current-grid {
         display: grid;
         grid-template-columns: 100%;
-    
+
     }
-    
+
     .project-current-grid img {
         display: none;
     }
