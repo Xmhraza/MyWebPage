@@ -449,6 +449,11 @@ div.dropdown-content {
         grid-template-columns: none;
     }
 
+    .row-grid {
+        display: grid;
+        grid-template-rows: 75px 325px;
+    }
+
     .project-media {
         max-width: 350px;
         max-height: 350px;
