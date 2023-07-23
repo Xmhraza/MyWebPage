@@ -420,6 +420,10 @@ div.dropdown-content {
         height: 400px;
     }
 
+    .project-title { 
+        margin-top: 115px;
+    }
+
     /* .project-current-grid img {
         width: 80%;
         height: 40%;
@@ -523,6 +527,15 @@ div.dropdown-content {
         margin-left: 15px;
         /* overflow-y: auto;
         max-height: 600px; */
+    }
+
+    .eti-video { 
+        width: 290px;
+        height: 200px;
+    }
+
+    .project-list { 
+        height: 700px;
     }
 
 }
