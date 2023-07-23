@@ -436,11 +436,11 @@ div.dropdown-content {
     }
 
     .project-media>.project-media-scroll-btn-lft {
-        right: 275px;
+        display: none;
     }
 
     .project-media>.project-media-scroll-btn-right {
-        left: 10px;
+        display: none;
     }
 
     .column-grid {
@@ -498,8 +498,6 @@ div.dropdown-content {
     }
     
     .project-current-grid img {
-        width: 700px;
-        height: 700px;
         display: none;
     }
 
