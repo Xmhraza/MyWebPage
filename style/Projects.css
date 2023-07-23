@@ -414,7 +414,7 @@ div.dropdown-content {
 
 @media screen and (max-width: 700px) {
 
-    .header-style { 
+    .header-style {
         height: 400px;
     }
 
@@ -479,9 +479,16 @@ div.dropdown-content {
         padding: 1px 1px;
     }
 
-    .project-title { 
+    .project-title {
         font-size: 50px;
     }
 
+    .project-list-entry {
+        font-size: 7px;
+    }
+
+    .project-list-link {
+        font-size: 7px;
+    }
 
 }
