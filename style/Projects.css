@@ -470,7 +470,7 @@ div.dropdown-content {
     }
 
     .media-row-grid {
-        grid-template-rows: 300px 125px;
+        grid-template-rows: 275px 125px;
     }
 
     .project-nav-style a,
