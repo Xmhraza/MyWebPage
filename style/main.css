@@ -122,6 +122,11 @@ body {
   background-image: linear-gradient(90deg, rgb(6, 244, 232) 0%, rgb(9, 247, 132) 80%);
 }
 
+.project-link-main {
+  color: lightblue;
+  cursor: pointer;
+}
+
 .Project-Link {
   border-bottom: none;
   margin: auto;
@@ -366,6 +371,10 @@ div .extra-information .back .information {
   margin-top: 10%;
 }
 
+div .extra-information .back .information div {
+  text-align: center;
+}
+
 .extra-information>.front {
   transform: perspective(600px) rotateY(0deg);
   background-size: 500% 500%;
@@ -599,5 +608,10 @@ div .extra-information .back .information {
 
   .sidenav {
     font-size: 5px;
+  }
+
+  div .extra-information .back .information {
+    /* text-align: center; */
+    margin-top: 5%;
   }
 }
