@@ -286,11 +286,12 @@
     function checkDirection() {
         if (touchendX < touchstartX) {
             // alert('swiped left!')
-            topScrollerLeft();
+            topScrollerRight();
         }
         if (touchendX > touchstartX) {
             // alert('swiped right!')
-            topScrollerRight();
+            topScrollerLeft();
+            
         }
     }
 

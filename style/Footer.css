@@ -28,3 +28,15 @@
     max-width: 50%;
     align-items: center;
 }
+
+
+@media screen and (max-width: 1000px) { 
+    #footer-placeholder {
+        margin-top: 25%;
+        padding: 10px 1%;
+    }
+
+    .footer-layout {
+        max-width: 75%;
+    }
+}
