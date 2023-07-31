@@ -17,6 +17,10 @@ body {
   animation: AnimateBG 20s ease infinite;
 }
 
+.icon-size-set {
+  font-size: xx-large;
+}
+
 @-webkit-keyframes AnimateBG {
   0% {
     background-position: 0% 50%;
@@ -50,6 +54,107 @@ body {
   grid-template-columns: 10% 80% 10%;
 
 }
+
+.top-scroller-container {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  height: 25%;
+  /* height: 100%; */
+}
+
+.top-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-inline: contain;
+  margin-top: 5%;
+
+  /* align-items: center; */
+}
+
+.top-scroller-buttons {
+  margin: auto;
+  text-align: center;
+}
+
+.top-scroller-segment {
+  display: grid;
+  grid-template-rows: 70% 30%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: black;
+  text-align: center;
+  border-radius: 25px;
+  overflow-y: hidden;
+}
+
+.top-scroller-eti {
+  background-image: url("../Media/EtiBackground.png");
+  background-size: 200% 200%;
+  background-position: 90% 50%;
+}
+
+.top-scroller-project {
+  /* background-image: url("../Media/manWorking.png"); */
+  background-size: 100% 100%;
+}
+
+.top-scroller-project-color {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  background-size: 500% 500%;
+  background-image: linear-gradient(0deg, rgb(6, 244, 232) 0%, rgb(9, 247, 132) 10%, rgb(192, 247, 9) 20%, rgb(247, 9, 9) 30%,
+      rgb(207, 9, 247) 40%, rgb(50, 6, 244) 50%, rgb(6, 244, 232) 60%, rgb(9, 247, 132) 70%, rgb(192, 247, 9) 80%, rgb(247, 9, 9) 90%,
+      rgb(207, 9, 247) 100%);
+  -webkit-animation: AnimateBG2 20s linear infinite;
+  animation: AnimateBG2 20s linear infinite;
+}
+
+.top-scroller-shadows-color {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  background-size: 500% 500%;
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(127, 127, 127) 10%, rgb(255, 255, 255) 20%, rgb(127, 127, 127) 30%,
+      rgb(0, 0, 0) 40%, rgb(127, 127, 127) 50%, rgb(255, 255, 255) 60%, rgb(128, 128, 128) 70%, rgb(0, 0, 0) 80%, rgb(127, 127, 127),
+      rgb(255, 255, 255) 100%);
+  -webkit-animation: AnimateBG2 20s linear infinite;
+  animation: AnimateBG2 20s linear infinite;
+}
+
+.top-scroller-project-title {
+  font-size: 150px;
+}
+
+.top-scroller-segment-opacity {
+  background-color: black;
+  opacity: 0.8;
+  z-index: 200;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.top-scroller-segment-information {}
+
+
+
+.top-scroller-lft-btn,
+.top-scroller-rgt-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.top-scroller-lft-btn:hover,
+.top-scroller-rgt-btn:hover {
+  opacity: 1;
+
+}
+
 
 .about-me {
   margin: auto;
@@ -229,7 +334,7 @@ body {
 .skill-grid {
   display: grid;
   grid-template-columns: 300px auto;
-  margin-top: 25%;
+  margin-top: 15%;
 }
 
 .skill-layout {
@@ -338,7 +443,8 @@ a {
 .extra-information-layout {
   display: grid;
   grid-template-columns: auto auto;
-  margin-top: 25%;
+  margin-top: 15%;
+  margin-bottom: 20%;
 }
 
 /*  */
@@ -450,6 +556,16 @@ div .extra-information .back .information div {
 
 @media screen and (max-width: 1300px) and (min-width: 1000px) {
 
+   
+
+  .top-scroller-project-title {
+    font-size: 110px;
+  }
+
+  .icon-size-set {
+    /* font-size: large; */
+  }
+
   .extra-information>.back,
   .front,
   .extra-information {
@@ -472,6 +588,10 @@ div .extra-information .back .information div {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
+
+  .top-scroller-project-title {
+    font-size: 80px;
+  }
 
   .extra-information>.back,
   .front,
@@ -502,7 +622,7 @@ div .extra-information .back .information div {
     font-size: medium;
   }
 
-  .sector-ter-heading {
+  .sector-ter-heading, .top-scroller-segment-information {
     font-size: small;
   }
 
@@ -514,6 +634,13 @@ div .extra-information .back .information div {
 }
 
 @media screen and (max-width: 700px) {
+
+  .icon-size-set {font-size: xx-small; }
+
+  .top-scroller-project-title {
+    font-size: 50px;
+  }
+
 
   .extra-information>.back,
   .front,
@@ -560,7 +687,7 @@ div .extra-information .back .information div {
     font-size: small;
   }
 
-  .sector-sec-heading {
+  .sector-sec-heading, .top-scroller-segment-information {
     font-size: x-small;
   }
 
@@ -577,6 +704,25 @@ div .extra-information .back .information div {
 
 
 @media screen and (max-width: 1000px) {
+.top-scroller-segment { 
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.top-scroller-container {
+  grid-template-columns: 8% 84% 8%;
+  /* height: 100%; */
+}
+
+.icon-size-set {font-size: large; }
+
+  .top-scroller-segment { 
+    grid-template-rows: 50% 50%;
+  }
+
+  .top-scroller-eti {
+    background-position: 90% 40%;
+  }
 
   .page-layout {
     grid-template-columns: 100%;
