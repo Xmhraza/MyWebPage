@@ -211,7 +211,7 @@ body {
 }
 
 .block-layout-box:hover .box-information {
-    top: 30%;
+    top: 27%;
     transition: top 1s;
 }
 
@@ -228,6 +228,10 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+
+    .block {
+        height: 120%;
+    }
 
     .hub-holder {
         display: grid;
@@ -260,6 +264,7 @@ body {
         border-bottom: rgb(0, 0, 0) 1px solid;
         border-right: none;
         border-bottom-left-radius: none;
+
     }
 
     .block-layout-box:hover .svg-wrapper {
