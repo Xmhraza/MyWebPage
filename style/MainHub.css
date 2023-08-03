@@ -248,6 +248,7 @@ body {
         height: calc(145%);
         width: calc(150%);
         top: -40%;
+        animation: none;
     }
 
     .block-layout {
