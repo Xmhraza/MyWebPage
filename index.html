@@ -1,343 +1,107 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/Navbar.css">
-    <link rel="stylesheet" href="style/skills.css">
-    <link rel="stylesheet" href="style/Footer.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/MainHub.css">
+    <title>Main Hub</title>
 </head>
 
-<body class="bg">
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("Data/NavBar.html");
-            $(".work-experience-data").load("Data/workExperience.html");
-            $(".education-data").load("Data/Education.html");
-            $(".extra-curricular-data").load("Data/ECA.html");
-            $(".skill-layout").load("Data/skills.html");
-        });
-    </script>
-    <div id="mySidenav" class="sidenav">
-        <img class="profile-img" src="Media/MyImage.jpeg" alt="">
-        <div class="sector-main-heading">About me</div>
-        <div class="profile-information">
-            Passionate towards software development, development of applications that improve areas such as education
-            and game development
-        </div>
-        <br><br><br>
-        <a href="Data/Projects.html" class="sector-main-heading ButtonLooking project-button">Projects</a><br>
-        <div class="projects">
-            <a href="https://hamidraza123.itch.io/etis-adventure">Eti's Adventure</a>
-            <br>
-            <a href="DailyTaskApp/TaskManager.html">Daily Task App</a>
-        </div>
-
-    </div>
-    <div id="main">
-        <nav id="nav-placeholder">
-        </nav>
-        <div class="page-layout">
-            <div></div>
-            <div>
-                <div class="top-scroller-container">
-                    <div class="top-scroller-buttons">
-                        <button class="top-scroller-lft-btn">
-                            <i class="bi bi-arrow-bar-left icon-size-set"></i>
-                        </button>
-                    </div>
-                    <div class="top-scroller">
-                        <div class="top-scroller-segment top-scroller-project">
-                            <div style=" margin: auto;" class="top-scroller-segment-image">
-                                <div class="top-scroller-project-title top-scroller-project-color">PROJECTS</div>
-                            </div>
-                            <div class="top-scroller-segment-opacity">
-                                <!-- <div class="sector-main-heading">Projects</div> -->
-                                <div class="top-scroller-segment-information">
-                                    I have been passionate about software development and recently decided to dedicate a
-                                    separate web page
-                                    including all of my previous, current and future projects
-                                    These projects cover different fields of software development including showcase of
-                                    programming languages,
-                                    web development and frameworks, game development, etc.
-                                    All the projects have links to their web pages or git hub files present for further
-                                    understanding, usage and
-                                    testing.
-                                    <br><br><br>
-                                    <a href="Data/Projects.html"><i style="cursor: pointer;"
-                                            class="bi bi-arrow-right top-scroller-project-color icon-size-set"></i></a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="top-scroller-segment top-scroller-eti">
-                            <div class="top-scroller-segment-image">
-
-                            </div>
-                            <div class="top-scroller-segment-opacity">
-                                <div class="sector-main-heading">Eti's Adventure</div>
-                                <div class="top-scroller-segment-information">
-                                    A game with learning outcomes. Head down to the project page to learn more about
-                                    eti's
-                                    adventure or press this
-                                    <a href="https://hamidraza123.itch.io/etis-adventure"
-                                        class="project-link-main">link</a>
-                                    to go directly to the game page.
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="top-scroller-segment top-scroller-project">
-                            <div style=" margin: auto;" class="top-scroller-segment-image">
-                                <div class="top-scroller-project-title top-scroller-shadows-color">SHADOWS</div>
-                            </div>
-                            <div class="top-scroller-segment-opacity">
-                                <!-- <div class="sector-main-heading">Projects</div> -->
-                                <div class="top-scroller-segment-information">
-                                    As a developer, one of the key skills required for any areas of development is
-                                    coming up with creative ideas and producing a product or a software around that.
-                                    I have always had many ideas/stories that I wanted to portray differently e.g.,
-                                    eti's adventure was an idea
-                                    that I portrayed through a game. This time, I came up with an original novel that I
-                                    named shadows. It is about
-                                    two siblings understanding people's nature. More updates in the future
-                                    <br><br><br>
-                                    <div class="sector-sec-heading">Coming Soon</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="top-scroller-buttons">
-                        <button class="top-scroller-rgt-btn icon-size-set">
-                            <i class="bi bi-arrow-bar-right"></i>
-                        </button>
-                    </div>
-
+<body>
+    <div class="hub-holder">
+        <div class="hub-introduction">
+            <div class="introduction">
+                <div class="svg-header">
+                    <svg>
+                        <rect class="heading-shape" />
+                        <div class="mainheading">Main Hub</div>
+                    </svg>
                 </div>
 
-                <div class="about-me">
-                    <div class="about-me-header">Summary</div>
-                    I am a graduate student with a computer science degree, offering software engineering and computer
-                    science skills. Passionate about programming and development, not only enthusiastic and hard working
-                    towards any
-                    tasks undertaken but also focus on learning from past experiences . Interest in other fields such as
-                    education,
-                    consultancy, development, etc. Currently, seeking a job that requires coding, software
-                    development/design skills
-                    and/or logical reasoning and problem solving skills.
-                </div>
-
-                <!-- <div class="project-link-background">
-                    <div class="ButtonLooking Project-Link">Projects</div>
-                </div> -->
-
-
-                <div id="work-experience" class="ButtonLooking"
-                    onclick="test('.work-experience', '.work-experience-data');">Work Experience</div>
-                <div class="sector work-experience">
-                    <div class="work-experience-data show-data"></div>
-                </div>
-
-                <div id="education" class="ButtonLooking" onclick="test('.education', '.education-data');">Education
-                </div>
-                <div class="sector education">
-                    <div class="education-data show-data">Hello World</div>
-                </div>
-
-                <div id="extra-curricular" class="ButtonLooking"
-                    onclick="test('.extra-curricular', '.extra-curricular-data');">Extra-Curricular Activities</div>
-                <div class="sector extra-curricular">
-                    <div class="extra-curricular-data show-data"></div>
-                </div>
-
-                <div class="skill-grid">
-                    <div id="skills" class="header-font">Skills</div>
-
-                    <div class="skill-layout">
-
-                    </div>
-                </div>
-
-
-                <div class="extra-information-layout">
-                    <div class="extra-information">
-                        <div class="back">
-                            <div class="header">Job Interests</div>
-                            <div class="information">
-                                <ul>
-                                    <li>
-                                        <h4>Software Development/Engineering</h4>
-                                    </li>
-                                    <li>
-                                        <h4>IT related positions</h4>
-                                    </li>
-                                    <li>
-                                        <h4>Consultancy in related fields</h4>
-                                    </li>
-                                    <li>
-                                        <h4>Improvements in the Education Sector</h4>
-                                    </li>
-                                    <li>
-                                        <h4>Game Development</h4>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="front">
-                            <div class="front-heading">Job Interests</div>
-                        </div>
-
-                    </div>
-                    <div class="extra-information">
-                        <div class="back">
-                            <div class="header">Current Projects</div>
-                            <div class="information">
-                                <div>For my previous, current and latest projects, please go to the project's page that
-                                    can be found on the nav bar, side bar
-                                    or using this <a href="Data/Projects.html" class="project-link-main">link</a></div>
-
-                            </div>
-                        </div>
-                        <div class="front">
-                            <div class="front-heading">Current Projects</div>
-                        </div>
-
-                    </div>
-                </div>
+                <!-- <div class="sec-heading">Name</div><br>
+                <div class="sec-heading">Contact</div> -->
 
             </div>
-            <div>
+        </div>
+        <div class="block">
+            <div class="block-layout">
+                <div class="block-layout-box" style=" border-top-left-radius: 50px;">
+                    <div class="svg-wrapper">
+                        <svg>
+                            <rect class="shape" style="stroke:red" />
+                            <div class="text">ONLINE CV</div>
+                        </svg>
+                    </div>
+                    <div class="box-information">
+                        This page will contain all of my academic achievements with a brief description. It will focus
+                        on my work experiences
+                        and my extra-curricular activities. <br><br>
+                        It will also cover my interests and minutely mention current projects. In order to view the
+                        page, press the link at the
+                        bottom
+                        <br><br>
+                        <a href="OnlineCV.html"><img style="width: 14%; height: 8%;" src="Media/MediaHub/work_7391694.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="block-layout-box" style="">
+                    <div class="svg-wrapper">
+                        <!-- xmlns="http://www.w3.org/2000/svg" -->
+                        <svg>
+                            <rect class="shape" style="stroke: green;" />
+                            <div class="text">PROJECTS</div>
+                        </svg>
+                    </div>
+                    <div class="box-information">
+                        I have worked on many projects in the past and even currently, I am dedicated and passionate
+                        about working on software
+                        related projects as well as creative projects in other fields <br><br>
+                        This page will provide a detailed description of my past and current projects as well as provide
+                        an update regarding
+                        projects that I am currently working on or planning to undertake in the future
+                        <br><br>
+                        <a href="/Data/Projects.html"><img style="width: 14%; height: 8%;" src="Media/MediaHub/icons8-project-64.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="block-layout-box"
+                    style="border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-right: none; border-bottom: none;">
+                    <div class="svg-wrapper">
+                        <svg>
+                            <rect class="shape" style="stroke: blue;" />
+                            <div class="text">CREATIVE SIDE</div>
+                        </svg>
+                    </div>
+                    <div class="box-information">
+                        I have always been a thinker. This allows me to come up with many ideas or thoughts that I want
+                        to show to the world. In order
+                        to that, I made it a mission to learn different ways of portraying my ideas and thoughts,
+                        whether it is my making a blog
+                        post about them, writing a whole novel around them or showing them in an artistic manner
+                        <br><br>
+                        Currently being developed, this page will showcase all of the above mentioned while adding a bit
+                        of design magic to each
+                        one of the ways
+                        <br><br>
+                        <div class="sec-heading">Coming Soon</div>
+                    </div>
+                </div>
             </div>
         </div>
-        <script>
-            $(function () {
-                $("#footer-placeholder").load("Data/Footer.html");
-            });
-        </script>
-        <div id="footer-placeholder"></div>
     </div>
 </body>
 
 <script>
-    let widthCheck = 0;
-
-    function scrollFunction() {
-        if (widthCheck + 20 >= document.querySelector('.top-scroller').scrollWidth) {
-            widthCheck = 0;
-            document.querySelector('.top-scroller').scrollBy({
-                left: -(document.querySelector('.top-scroller').scrollWidth),
-            })
+    setTimeout(() => {
+        if (window.innerWidth <= 700) {
+            document.querySelector('.block').style.width = "95%";
         } else {
-            document.querySelector('.top-scroller').scrollBy({
-                left: document.querySelector('.top-scroller').clientWidth,
-                behavior: 'smooth'
-            })
-            widthCheck += document.querySelector('.top-scroller').clientWidth * 2;
+            document.querySelector('.block').style.width = "80%";
         }
-
-    };
-
-    let scrollerCheck = setInterval(scrollFunction, 5000)
-
-    function topScrollerLeft() {
-        let leftButton = document.querySelector('.top-scroller');
-        leftButton.scrollBy({
-            left: -(leftButton.clientWidth),
-            behavior: 'smooth'
-        });
-        clearInterval(scrollerCheck);
-        scrollerCheck = setInterval(scrollFunction, 25000);
-        widthCheck -= document.querySelector('.top-scroller').clientWidth * 2;
-        if (widthCheck < 0) widthCheck = 0;
-    }
-
-    function topScrollerRight() {
-        let rightButton = document.querySelector('.top-scroller');
-        rightButton.scrollBy({
-            left: +(rightButton.clientWidth),
-            behavior: 'smooth'
-        });
-        clearInterval(scrollerCheck);
-        scrollerCheck = setInterval(scrollFunction, 25000);
-        widthCheck += document.querySelector('.top-scroller').clientWidth * 2;
-    }
-
-    document.querySelector('.top-scroller-lft-btn')
-        .addEventListener('click', () => {
-            topScrollerLeft();
+        document.querySelectorAll('.block-layout-box').forEach(box => {
+            box.style.display = "initial";
+            box.style.transition = "1.5s all ease-in-out";
         })
+    }, 1000);
 
-    document.querySelector('.top-scroller-rgt-btn')
-        .addEventListener('click', () => {
-            topScrollerRight();
-        })
-
-    let touchstartX = 0
-    let touchendX = 0
-
-    function checkDirection() {
-        if (touchendX < touchstartX) {
-            // alert('swiped left!')
-            topScrollerRight();
-        }
-        if (touchendX > touchstartX) {
-            // alert('swiped right!')
-            topScrollerLeft();
-            
-        }
-    }
-
-    document.querySelector('.top-scroller-container').addEventListener('touchstart', e => {
-        touchstartX = e.changedTouches[0].screenX
-    })
-
-    document.querySelector('.top-scroller-container').addEventListener('touchend', e => {
-        touchendX = e.changedTouches[0].screenX
-        checkDirection()
-    })
-
-    function test(IdName, data) {
-        document.querySelectorAll(IdName)
-            .forEach((dropdown) => {
-                if (!dropdown.classList.contains('startDisplay')) {
-                    dropdown.classList.add('startDisplay')
-                    dropdown.classList.remove('stopDisplay')
-                    document.querySelector(data).classList.remove('show-data')
-                } else {
-                    dropdown.classList.add('stopDisplay')
-                    dropdown.classList.remove('startDisplay')
-                    document.querySelector(data).classList.add('show-data')
-                }
-            })
-
-    }
-
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-    function openNav() {
-        let mySideBar = document.getElementById("mySidenav");
-        if (!mySideBar.classList.contains("showSideBar")) {
-            mySideBar.classList.add("showSideBar")
-            document.getElementById("mySidenav").style.width = "20%";
-            document.getElementById("main").style.marginLeft = "20%";
-        } else {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            mySideBar.classList.remove("showSideBar")
-        }
-    }
-
-    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-
-    } 
 </script>
 
 </html>
