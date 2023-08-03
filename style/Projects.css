@@ -322,13 +322,13 @@ div.dropdown-content {
 }
 
 .project-current-grid img {
-    width: 700px;
-    height: 700px;
+    width: 80%;
+    height: 80%;
 }
 
 .project-current-entry {
     margin-top: 120px;
-    margin-left: 150px;
+    margin-left: 10%;
     overflow-y: auto;
     max-height: 600px;
 }

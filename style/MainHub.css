@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8e2ef;
+    overflow-x: hidden;
+}
+
+.hub-holder {
+    display: grid;
+    grid-template-columns: 18% 90%;
+    width: 100%;
+    margin: 5% 7% 0;
+    height: 80%;
+}
+
+.hub-introduction {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-top: 15%;
+    overflow: hidden;
+}
+
+.introduction {
+    display: initial;
+    text-align: center;
+    animation: fadeIn 5s;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.introduction .svg-header {
+    position: relative;
+    margin: 0 auto;
+    width: 245px;
+}
+
+.mainheading {
+    font-size: 40px;
+    font-family: "Monoton", Helvetica, sans-serif;
+    font-weight: 100;
+    color: transparent;
+    background: linear-gradient(7deg, #ea9797, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 4px 4px 5px rgba(171, 168, 87, 0.5);
+    position: relative;
+    margin: 0 auto;
+    top: -120px;
+    position: relative;
+}
+
+.heading-shape {
+    fill: transparent;
+    stroke-dasharray: 150 200;
+    stroke-dashoffset: -305;
+    stroke-width: 1%;
+    position: relative;
+    stroke: rgb(230, 167, 167);
+    height: 110;
+    width: 245
+}
+
+.sec-heading {
+    font-size: x-large;
+}
+
+@keyframes fadeIn {
+
+    0%,
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.block {
+    position: relative;
+    width: 0%;
+    background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
+    border-radius: 50px;
+    transition: 1.7s all ease-in-out;
+}
+
+@-webkit-keyframes AnimateBG2 {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes AnimateBG2 {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.block-layout {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 50px;
+}
+
+.block-layout-box {
+    display: none;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    text-align: center;
+    border-right: rgb(0, 0, 0) 1px solid;
+}
+
+.block:before,
+.block:after {
+    content: '';
+    position: absolute;
+    left: -25%;
+    top: -2.5%;
+    background: linear-gradient(45deg,
+            #F25F61 5%,
+            #A65FF2,
+            #f25fc1,
+            #7c5ff2,
+            #F25F61,
+            #A65FF2,
+            #f25fc1 90%);
+    background-size: 300%;
+    width: calc(120%);
+    height: calc(105%);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+.block::before {
+    border-radius: 25px;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.block:after {
+    filter: blur(50px);
+}
+
+.svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 320px;
+    transition: top 1s;
+}
+
+.svg-wrapper svg {
+    height: 60px;
+    width: 320px;
+}
+
+.shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+    fill: transparent;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    height: 60;
+    width: 320;
+}
+
+.text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: rgb(0, 0, 0);
+    top: -48px;
+    position: relative;
+}
+
+.block-layout-box:hover .shape {
+    stroke-dasharray: 140 500;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+}
+
+.block-layout-box:hover .svg-wrapper {
+    top: 20%;
+    transition: top 1s;
+}
+
+.block-layout-box:hover .box-information {
+    top: 30%;
+    transition: top 1s;
+}
+
+.block-layout-box:hover {
+    opacity: 1;
+}
+
+.box-information {
+    transition: top 1s;
+    position: relative;
+    width: 320px;
+    top: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+
+    .hub-holder {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        margin: 45% 7% 0;
+    }
+
+    .hub-introduction {
+        /* width: 100%;
+        text-align: center;
+        padding: 0; */
+        margin-top: -35%;
+    }
+
+    .block:before,
+    .block:after {
+        height: calc(145%);
+        width: calc(150%);
+        top: -40%;
+    }
+
+    .block-layout {
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+    }
+
+    .block-layout-box {
+        border-bottom: rgb(0, 0, 0) 1px solid;
+        border-right: none;
+        border-bottom-left-radius: none;
+    }
+
+    .block-layout-box:hover .svg-wrapper {
+        top: 10%;
+    }
+
+    .block-layout-box:hover .box-information {
+        top: 10%;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+    .block-layout-box:hover .shape {
+        stroke-dasharray: 80 350;
+        stroke-dashoffset: -261;
+        stroke-width: 8px;
+    }
+
+    .block-layout-box:hover .box-information {
+        top: 10%;
+
+    }
+
+    .svg-wrapper svg {
+        width: 160px;
+    }
+
+    .box-information {
+        font-size: small;
+        width: 240px;
+    }
+
+    .svg-wrapper {
+        width: 240px;
+    }
+
+    .shape {
+        width: 160px;
+    }
+
+    .text {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .heading-shape {
+        stroke-dasharray: 90 200;
+        stroke-dashoffset: -235;
+        height: 130;
+        width: 160
+    }
+
+    .mainheading {
+        font-size: 30px;
+        top: -125px;
+    }
+
+    .introduction .svg-header {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .block-layout-box:hover .shape {
+        stroke-dasharray: 70 350;
+        stroke-dashoffset: -195;
+        stroke-width: 1px;
+    }
+
+    .block-layout-box:hover .box-information {
+        top: 10%;
+    }
+
+    .svg-wrapper svg {
+        width: 120;
+    }
+
+    .box-information {
+        font-size: xx-small;
+        width: 160;
+    }
+
+    .svg-wrapper {
+        width: 120;
+    }
+
+    .shape {
+        width: 120;
+        height: 50;
+    }
+
+    .text {
+        font-size: 13px;
+        letter-spacing: 1px;
+        width: 120;
+        line-height: 25px;
+    }
+
+    .heading-shape {
+        stroke-dasharray: 90 150;
+        stroke-dashoffset: -215;
+        height: 130;
+        width: 120
+    }
+
+    .mainheading {
+        font-size: 30px;
+        top: -130px;
+    }
+
+    .introduction .svg-header {
+        width: 120px;
+    }
+}
