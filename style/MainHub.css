@@ -233,7 +233,7 @@ body {
         display: grid;
         grid-template-columns: none;
         grid-template-rows: auto auto;
-        margin: 45% 7% 0;
+        margin: 45% 2% 0;
     }
 
     .hub-introduction {

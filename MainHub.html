@@ -94,7 +94,11 @@
 
 <script>
     setTimeout(() => {
-        document.querySelector('.block').style.width = "80%";
+        if (window.innerWidth <= 700) {
+            document.querySelector('.block').style.width = "95%";
+        } else {
+            document.querySelector('.block').style.width = "80%";
+        }
         document.querySelectorAll('.block-layout-box').forEach(box => {
             box.style.display = "initial";
             box.style.transition = "1.5s all ease-in-out";
